@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/clouds-37009_1920.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>MOITI'S weather PROJECT</title>
+    <script defer src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <!--! HEADER !-->
+        <header>
+          <div class="sider-btn-place" id="id_sider_btn"><strong>&#8801;</strong></div>
+          <div class="header-content">
+            <div class="top-headline">
+              <h1 class="karantina t-shadow">מוטי</h1>
+              <lord-icon src="https://cdn.lordicon.com/szoiozyr.json" trigger="loop" delay="2500" style="width: 50px; height: 50px" ></lord-icon>
+              <h1 class="karantina t-shadow">עובד</h1>
+            </div>
+            <div class="header-manu">
+              <nav>
+                <ul>
+                  <li><a href="../../index.html">חזרה למסך הבית</a></li>
+                  <li><a href="../../index.html#contact_id">יצירת קשר</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <aside id="sider_id">
+          <div class="sider-manu">
+            <nav>
+              <ul>
+                <li><a href="../../index.html">חזרה למסך הבית</a></li>
+                <li><a href="../../index.html#contact_id">יצירת קשר</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <!--! MAIN + CONTENT !-->
+        <main>
+          <div class="search-box">
+            <div class="form-control">
+              <label for="input_citys">Enter city:</label>
+              <input type="text" id="input_citys" placeholder="London..." autofocus />
+              <button class="search-button" id="btn"></button>
+            </div>
+          </div>
+          <div class="weather-box">
+            <div class="temperature-icon">
+              <div class="day-date-headline">
+                <p class="day-big-text" id="id_present_day"></p>
+                <p class="date-text" id="id_date"></p>
+              </div>
+              <div class="temp-icon-place">
+                <div class="temp-text">
+                  <p class="text-degrees" id="id_present_temperature">Welcome!!</p>
+                  <p class="description" id="id_description">It's always good to start the day with the weather forecast!</p>
+                </div>
+                <div class="weth-icon">
+                  <img width="100%" src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/windsock.svg" alt="weather icon" id="id_weather_icon" />
+                </div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="country-details">
+                <p class="d-text-bold" id="id_country_code">Our info:</p>
+                <p class="d-text-bold" id="id_present_city"></p>
+              </div>
+              <div class="details-text" id="id_err_text">
+                <p class="d-text" id="id_present_wind">we will tell you:</p>
+                <p class="d-text" id="id_present_humidity">speed wind</p>
+                <p class="d-text" id="id_present_temp_max">max-min temp!</p>
+                <p class="d-text" id="id_present_temp_min">how it feels like...</p>
+                <p class="d-text" id="id_present_feel_temp">pressure!</p>
+                <p class="d-text" id="id_pressure">and visibility.</p>
+                <p class="d-text" id="id_visibility">humidity...</p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!--! FOOTER !-->
+        <footer>
+          <small>!הזכויות שמורות: למוטי עובד</small>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
