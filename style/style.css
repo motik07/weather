@@ -280,16 +280,19 @@ div.form-control > input {
 }
 
 div.form-control > button {
-  background-image: url(../icon/_d153fa99-2642-4c35-8c1d-2363a0d23e72-removebg-preview.png);
+  /* background-image: url(../icon/_d153fa99-2642-4c35-8c1d-2363a0d23e72-removebg-preview.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   box-shadow: 0px -1px 9px #000000db;
   border: none;
   cursor: pointer;
+  background-color: #0087ff;
+  font-weight: 900;
+  color: white;
 }
 
 div.form-control > button:active {
